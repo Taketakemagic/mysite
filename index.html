@@ -4,34 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" href="icon.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>
-      <a href="#"><img class="icon" src="icon.jpg" alt="アイコン" width="80" height="80"></a>
-    </h1>
+    <div class="header">
+      <h1>
+        <a href="#"><img class="icon" src="icon.png" alt="アイコン" width="80" height="80"></a>
+      </h1>
+      <section class="ryoko">
+        <div class="ryoko">
+          <br><br>
+          <h2 class="ryoko">旅行で行きたい場所</h2>
+        </div>
+      </section>
+    </div>
   </header>
   <main>
-    <section class="ryoko">
-      <div class="ryoko">
-        <br><br>
-        <h2 class="ryoko">海外旅行で行きたい国</h2>
-      </div>
+    <section>
+      <h2 class="gaikoku">外国で行きたい場所</h2>
     </section>
+
   <section class="america features">
     <div class="pic">
       <h2>アメリカ</h2>
       <p>すごく行きたい!</p>
     </div>
     <div class="desc">
-      <img src="nyuyork.jpg" alt="アメリカ" width="480" height="320">
+      <img src="nyuyork.jpg" alt="アメリカ" width="480" height="320" data-aos="zoom-in" data-aos-duration="3000">
     </div>
   </section>
+  <section class="itaria features">
+    <div class="pic">
+      <h2>イタリア</h2>
+      <p>すごく行きたい!</p>
+    </div>
+    <div class="desc">
+      <img src="itaria.jpg" alt="イタリア" width="480" height="320" data-aos="fade-up-right" data-aos-duration="3000">
+    </div>
+  </section>
+  <section class="france features">
+    <div class="pic">
+      <h2>フランス</h2>
+      <p>すごく行きたい!</p>
+    </div>
+    <div class="desc">
+      <img src="france.jpg" alt="フランス" width="480" height="320" data-aos="fade-up-left" data-aos-duration="3000">
+    </div>
+  </section>
+
+  <section class="japan">
+    <h2 class="japan">国内で行きたい場所</h2>
+    <img src="japan.jpg" alt="日本の画像" width="480" height="320" data-aos="my-animation" data-aos-duration="3000">
+    <div class="voices japan">
+      <a href="#" target="_blank">
+      <section data-aos="zoom-out-down" data-aos-duration="3000">
+        <h2>沖縄</h2>
+        <p >ダイビングしたい</p>
+      </section>
+    </a>
+    <a href="#" target="_blank">
+      <section data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="500">
+        <h2>箱根</h2>
+        <p>温泉でゆっくりしたい</p>
+      </section>
+    </a>
+    <a href="#" target="_blank">
+      <section data-aos="flip-up" data-aos-duration="3000" data-aos-delay="1000">
+        <h2>大阪</h2>
+        <p>おいしいものを食べたい</p>
+      </section>
+    </a>
+    </div>
+  </section>
+
   </main>
-  <footer>
+  <footer id="footer">
     <small>(c)</small>
   </footer>
+
+<a href="#" class="top" data-aos="fade-up" data-aos-anchor="#footer" data-aos-offset="0">Top</a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

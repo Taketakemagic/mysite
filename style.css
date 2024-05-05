@@ -1,18 +1,23 @@
 @charset "utf-8";
+
 /* 共通 */
-body{
+body {
   margin: 0;
 }
-header{
+
+header {
   margin: 0;
 }
-h1{
+
+h1 {
   margin: 0;
 }
-h2{
+
+h2 {
   margin: 0;
 }
-footer{
+
+footer {
   margin: 0;
   padding-top: 64px;
   padding-bottom: 64px;
@@ -23,29 +28,48 @@ footer{
 
 
 /* 個別設定 */
-section.ryoko{
+
+div.header{
+  display: flex;
   background-color: skyblue;
   background-image: url(bg.png);
   background-position: center bottom;
   height: 149px;
 }
-h2.ryoko{
+
+h2.ryoko {
   margin: auto;
   text-align: center;
 }
 
-img.icon{
+h2.gaikoku,
+h2.japan {
+  margin: 144px auto;
+  text-align: center;
+  font-size: 48px;
+}
+
+img.icon {
   margin: 32px;
 }
 
-a:hover{
+a:hover {
   opacity: .7;
 }
 
-section.america{
+section.america,
+section.france,
+section.japan {
   text-align: center;
   max-width: 800px;
   margin: auto;
+}
+
+section.itaria {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  flex-direction: row-reverse;
 }
 
 /* features */
@@ -57,11 +81,55 @@ section.america{
 .feature {
   margin-top: 64px;
 }
+
+.voices  {
+  display: flex;
+  gap: 16px;
+  margin: 48px auto;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.voices > a >section {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.voices > a{
+  text-decoration: none;
+  color: black;
+}
+
+.top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  color: skyblue;
+}
+
+/* 個別アニメーション */
+
+[data-aos="my-animation"]{
+opacity: 0;
+transition: opacity 300ms, transform 300ms;
+}
+[data-aos="my-animation"].aos-animate{
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
 @media (min-width: 600px) {
-  section.america{
+
+  section.america,
+  section.france,
+  section.itaria {
     display: flex;
     gap: 32px;
   }
+
   .pic {
     width: 300px;
   }
