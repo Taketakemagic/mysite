@@ -138,3 +138,10 @@ transition: opacity 300ms, transform 300ms;
     flex: 1;
   }
 }
+
+/* 沖縄ページ */
+div.daiving{
+  height: 640px;
+  text-align: center;
+  padding-top: 160px;
+}
